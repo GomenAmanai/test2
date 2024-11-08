@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: margin-left 1s;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 1s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            text-align: left;
+        }
+
+        #main {
+            transition: margin-left 0.3s;
+        }
+
+        .Contents {
+            padding: 0 20px;
+        }
+
+        .main-title {
+            font-size: 3em;
+            color: #333;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+        }
+
+        .sub-title {
+            font-size: 2.5em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .paragraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.5s ease;
+        }
+
+        .visibleparagraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .subsection-title {
+            font-size: 1.6em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">I. Introduction to Gasoline</a>
+        <a href="Production_Process.html">II. Production Process</a>
+        <a href="Chemical_Composition.html">III. Chemical Composition</a>
+        <a href="Types_Gas.html">IV. Types of Gasoline</a>
+        <a href="Uses_Gas.html">V. Uses of Gasoline</a>
+        <a href="Environment_Impact.html">VI. Environmental Impact</a>
+        <a href="Alt_Gas.html">VII. Alternative to Gasoline</a>
+        <a href="Future_gas.html">VIII. Future of Gasoline</a>
+        <a href="https://quizizz.com/join/quiz/67177ea92608dc0492536bf9/start?studentShare=true&fbclid=IwZXh0bgNhZW0CMTEAAR05_xVslCQxsm3eOiwsDUgK5xVlfa88ZbE3m7sKIMHHkLPEu7j9RRRX0Ys_aem_unjXBZtYQ5iU2LPxiF6I0g">IX. Quiz</a>
+        <a href="References.html">X. References</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>    
+
+    <div class="Contents">
+        <h1 class="main-title">
+            References
+        </h1>
+        <hr class="divider">
+        <p class="visibleparagraph">
+           <b>1.</b>  (n.d.). International Energy Agency: IEA. Retrieved October 16, 2024, from <a href="https://www.iea.org/">https://www.iea.org/</a><br>
+           <b>2.</b> (n.d.). USDA.gov. Retrieved October 16, 2024, from <a href="https://www.usda.gov/">https://www.usda.gov/</a><br>
+           <b>3.</b>(n.d.). National Renewable Energy Laboratory (NREL) Home Page | NREL. Retrieved October 16, 2024, from <a href="https://www.nrel.gov/">https://www.nrel.gov/</a><br>
+           <b>4.</b> (n.d.). U.S. Energy Information Administration (EIA): Homepage. Retrieved October 16, 2024, from <a href="https://www.eia.gov/">https://www.eia.gov/</a><br>
+           <b>5.</b> Alkanes. (2023, January 22). Chemistry LibreTexts. Retrieved October 17, 2024, from <a href="https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Hydrocarbons/Alkanes">https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Hydrocarbons/Alkanes</a><br>
+           <b>6.</b> Anand, S. (2024, June 5). Gasoline Demand Reduces With Surge In Electric Vehicles For 2024. Market Research Future. Retrieved October 20, 2024, from <a href="https://www.marketresearchfuture.com/news/gasoline-demand-reduces-with-surge-in-electric-vehicles-for-2024">https://www.marketresearchfuture.com/news/gasoline-demand-reduces-with-surge-in-electric-vehicles-for-2024</a><br>
+           <b>7.</b> Aromatic Hydrocarbons - Definition, Examples, Properties & Uses of Aromatic Hydrocarbons. (n.d.). BYJU'S. Retrieved October 17, 2024, from <a href="https://byjus.com/chemistry/aromatic-hydrocarbons/">https://byjus.com/chemistry/aromatic-hydrocarbons/</a><br>
+           <b>8.</b> Benzene | C6H6 | CID 241. (n.d.). PubChem. Retrieved October 17, 2024, from <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Benzene">https://pubchem.ncbi.nlm.nih.gov/compound/Benzene</a><br>
+           <b>9.</b> Canada.ca. (2024, June 19). Fuel-efficient driving techniques. Retrieved October 20, 2024, from <a href="https://natural-resources.canada.ca/energy-efficiency/transportation-alternative-fuels/personal-vehicles/fuel-efficient-driving-techniques/21038">https://natural-resources.canada.ca/energy-efficiency/transportation-alternative-fuels/personal-vehicles/fuel-efficient-driving-techniques/21038</a><br>
+           <b>10.</b> Climate Change 2021: The Physical Science Basis | Climate Change 2021: The Physical Science Basis. (n.d.). IPCC. Retrieved October 16, 2024, from <a href="https://www.ipcc.ch/report/ar6/wg1/">https://www.ipcc.ch/report/ar6/wg1/</a><br>
+           <b>11.</b> Ethylbenzene | C8H10 | CID 7500. (n.d.). PubChem. Retrieved October 17, 2024, from <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ethylbenzene">https://pubchem.ncbi.nlm.nih.gov/compound/Ethylbenzene</a><br>
+           <b>12.</b> Ethylene | CH2=CH2 | CID 6325. (n.d.). PubChem. Retrieved October 17, 2024, from <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ethylene">https://pubchem.ncbi.nlm.nih.gov/compound/Ethylene</a><br>
+           <b>13.</b> Future of Alternative Fuels - Delivered - Global. (n.d.). DHL. Retrieved October 20, 2024, from <a href="https://www.dhl.com/global-en/delivered/responsibility/future-of-alternative-fuels.html">https://www.dhl.com/global-en/delivered/responsibility/future-of-alternative-fuels.html</a><br>
+           <b>14.</b> Gasoline explained. (n.d.). U.S. Energy Information Administration (EIA). Retrieved October 16, 2024, from <a href="https://www.eia.gov/energyexplained/gasoline/">https://www.eia.gov/energyexplained/gasoline/</a><br>
+           <b>15.</b> Heptane | C7H16 | CID 8900. (n.d.). PubChem. Retrieved October 17, 2024, from <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Heptane">https://pubchem.ncbi.nlm.nih.gov/compound/Heptane</a><br>
+           <b>16.</b> Large Oil Spills | U.S. Geological Survey. (2019, March 1). USGS.gov. Retrieved October 16, 2024, from <a href="https://www.usgs.gov/mission-areas/water-resources/science/large-oil-spills">https://www.usgs.gov/mission-areas/water-resources/science/large-oil-spills</a><br>
+           <b>17.</b> n-HEXANE | C6H14 | CID 8058. (n.d.). PubChem. Retrieved October 17, 2024, from <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Hexane">https://pubchem.ncbi.nlm.nih.gov/compound/Hexane</a><br>
+        </p>
+           
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        function toggleDefinition(button) {
+            var paragraph = button.parentElement.nextElementSibling;
+            if (paragraph.style.maxHeight) {
+                paragraph.style.maxHeight = null; 
+                button.innerHTML = "&#8250;"; 
+            } else {
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px"
+                button.innerHTML = "<b>^</b>"; 
+            }
+        }
+    </script>
+</body>
+</html>

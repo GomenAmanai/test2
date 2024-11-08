@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Gasoline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">I. Introduction to Gasoline</a>
+        <a href="Production_Process.html">II. Production Process</a>
+        <a href="Chemical_Composition.html">III. Chemical Composition</a>
+        <a href="Types_Gas.html">IV. Types of Gasoline</a>
+        <a href="Uses_Gas.html">V. Uses of Gasoline</a>
+        <a href="Environment_Impact.html">VI. Environmental Impact</a>
+        <a href="Alt_Gas.html">VII. Alternative to Gasoline</a>
+        <a href="Future_gas.html">VIII. Future of Gasoline</a>
+        <a href="https://quizizz.com/join/quiz/67177ea92608dc0492536bf9/start?studentShare=true&fbclid=IwZXh0bgNhZW0CMTEAAR05_xVslCQxsm3eOiwsDUgK5xVlfa88ZbE3m7sKIMHHkLPEu7j9RRRX0Ys_aem_unjXBZtYQ5iU2LPxiF6I0g">IX. Quiz</a>
+        <a href="References.html">X. References</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+
+    <div class="Contents">
+        <h1 class="main-title">
+            Types of Gasoline
+        </h1>
+        <hr class="divider">
+        <div class="visibleparagraph">
+            <h4 class="subsection-title">1. Diesel</h3>
+            <p>combustible liquid used as fuel for diesel engines, ordinarily obtained from fractions of crude oil that are less volatile than the fractions used in gasoline. In diesel engines, the fuel is ignited not by a spark, as in gasoline engines, but by the heat of air compressed in the cylinder, with the fuel injected in a spray into the hot compressed air. </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="Gasoline Website/Diesel.jpg" height="300">
+            </div>
+        </div>
+        <br>
+        <div class="visibleparagraph">
+            <h4 class="subsection-title">2. Ethanol</h3>
+            <p>a member of a class of organic compounds that are given the general name alcohols; its molecular formula is C2H5OH. Ethanol is an important industrial chemical; it is used as a solvent, in the synthesis of other organic chemicals, and as an additive to automotive gasoline (forming a mixture known as a gasohol). Ethanol is also the intoxicating ingredient of many alcoholic beverages such as beer, wine, and distilled spirits. </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="Gasoline Website/Ethanol.jpg" height="300">
+            </div>
+        </div>
+        <br>
+        <div class="visibleparagraph">
+            <h4 class="subsection-title">3. Biodiesel</h3>
+            <p>refers to a vegetable oil- or animal fat-based diesel fuel consisting of long-chain alkyl (methyl, propyl or ethyl) esters. Biodiesel is typically made by chemically reacting lipids [e.g. vegetable oil, animal fat (tallow)] with an alcohol. Biodiesel is meant to be used in standard diesel engines and is thus distinct from the vegetable and waste oils used to fuel converted diesel engines. Biodiesel can be used alone or blended with petrodiesel. Biodiesel can also be used as a low carbon alternative to heating oil. Biodiesel is fatty acid ethyl or methyl ester made from virgin or used vegetable oils (both edible and nonedible) and animal fats. </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="Gasoline Website/Biodiesel.jpg" height="300">
+            </div>
+        </div>
+        <br>
+        <div class="visibleparagraph">
+            <h4 class="subsection-title">4. Leaded and Unleaded </h3>
+            <p>Leaded gasoline is a type of fuel that contains tetraethyl lead (TEL), a compound added to enhance performance in internal combustion engines, whereas.  Unleaded gasoline is a type of fuel that does not contain tetraethyl lead or other lead compounds. It was developed as a safer alternative to leaded gasoline, primarily due to the environmental and health concerns associated with lead exposure. </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="Gasoline Website/leaded.jpg" height="300">
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: margin-left 1s;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 1s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            text-align: left;
+        }
+
+        #main {
+            transition: margin-left 0.3s;
+        }
+
+        .Contents {
+            padding: 0 20px;
+        }
+
+        .main-title {
+            font-size: 3em;
+            color: #333;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+        }
+
+        .sub-title {
+            font-size: 2.5em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .paragraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.5s ease;
+        }
+
+        .visibleparagraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .subsection-title {
+            font-size: 1.6em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

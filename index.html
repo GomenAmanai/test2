@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Gasoline</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: margin-left 1s;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            display: block;
+            transition: 1s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            text-align: left;
+        }
+
+        #main {
+            transition: margin-left 0.3s;
+        }
+
+        .Contents {
+            padding: 0 20px;
+        }
+
+        .main-title {
+            font-size: 3em;
+            color: #333;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+        }
+
+        .sub-title {
+            font-size: 2.5em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .paragraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.5s ease;
+        }
+
+        .visibleparagraph {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .subsection-title {
+            font-size: 1.6em;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">I. Introduction to Gasoline</a>
+        <a href="Production_Process.html">II. Production Process</a>
+        <a href="Chemical_Composition.html">III. Chemical Composition</a>
+        <a href="Types_Gas.html">IV. Types of Gasoline</a>
+        <a href="Uses_Gas.html">V. Uses of Gasoline</a>
+        <a href="Environment_Impact.html">VI. Environmental Impact</a>
+        <a href="Alt_Gas.html">VII. Alternative to Gasoline</a>
+        <a href="Future_gas.html">VIII. Future of Gasoline</a>
+        <a href="https://quizizz.com/join/quiz/67177ea92608dc0492536bf9/start?studentShare=true&fbclid=IwZXh0bgNhZW0CMTEAAR05_xVslCQxsm3eOiwsDUgK5xVlfa88ZbE3m7sKIMHHkLPEu7j9RRRX0Ys_aem_unjXBZtYQ5iU2LPxiF6I0g">IX. Quiz</a>
+        <a href="References.html">X. References</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>    
+
+    <div class="Contents">
+        <h1 class="main-title">
+            Introduction to Gasoline
+        </h1>
+        <hr class="divider">
+
+        <div style="display: flex; align-items: flex-start;">
+            <img src="Gasoline Website/Gasoline.gif" height="200" width="300" style="margin-right: 20px;">
+            <div>
+                <h3 class="subsection-title">Definition:</h3>
+                <p class="visibleparagraph">Gasoline, mixture of volatile, flammable liquid hydrocarbons derived from petroleum and used as fuel for internal-combustion engines. It is also used as a solvent for oils and fats. Originally a by-product of the petroleum industry (kerosene being the principal product), gasoline became the preferred automobile fuel because of its high energy of combustion and capacity to mix readily with air in a carburetor.</p>
+            </div>
+        </div>
+        <hr class="divider">
+        <h3 class="section-title">
+            Dissertation
+        </h3>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Gasoline and Lubricating Oil
+        </h4>
+        <div class="paragraph">         
+            <div style="display: flex; align-items: flex-start;">
+                <img src="Gasoline Website/Gustav.jpg" height="270" width="300" style="margin-right: 20px;">
+                <div>
+                    <p>Gustav Egloff explores the chemical properties and refining processes of gasoline and lubricating oils. Egloff, a notable American chemist and a pioneer in the petroleum industry, discusses the complexities of producing high-quality fuels and lubricants. His work also reflects on advancements in the petroleum sector during his time, including the creation of polymer gasoline, which represents a method of producing gasoline artificially​.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Commercial Gasoline and the Impurities That Are Being Encountered
+        </h4>
+        <div class="paragraph">
+            <div style="display: flex; justify-content: center;">
+                <img src="Gasoline Website/Inpurities.jpg" height="200">
+            </div>
+            <p>Frank Harris Floyd examines the various impurities present in commercial gasoline, their sources, and the impact of these impurities on engine performance and environmental concerns. The paper discusses how impurities affect the combustion process and may lead to engine wear or failure. It also explores methods for analyzing and reducing these impurities to improve gasoline quality and efficiency in vehicles.</p>
+        </div>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Gasoline and Its Future
+        </h4>
+        <div class="paragraph">         
+            <div style="display: flex; align-items: flex-start;">
+                <img src="Gasoline Website/evolution.gif" height="270" width="300" style="margin-right: 20px;">
+                <div>
+                    <p>N. B. Pope discusses the evolution of gasoline technology, emphasizing its role in automotive engineering and the potential advancements in fuel efficiency and emissions control. Pope explores the implications of gasoline use on the environment and the importance of developing higher-quality fuels to meet changing regulatory standards and consumer expectations. The paper serves as a historical perspective on the challenges and future directions for gasoline as a key energy source in transportation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+
+        <h3 class="section-title">
+            Importance to society
+        </h3>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Economy
+        </h4>
+        <div class="paragraph"> 
+            Factories and production plants depend on energy to operate machinery and processes. Without fuel, the production of goods and services would come to a halt, affecting the economy and the availability of essential products.
+        </div>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Trade
+        </h4>
+        <div class="paragraph"> 
+            Gasoline plays a crucial role in facilitating trade globally. As a primary fuel source for transportation, it enables the movement of goods and services across vast distances, enhancing supply chain efficiency. The availability of gasoline influences trade patterns, particularly in countries reliant on road transport for both domestic and international trade.       
+        </div>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Transportation
+        </h4>
+        <div class="paragraph"> 
+            Fuel is at the heart of modern transportation. Personal vehicles, buses, trucks and airplanes depend on fossil fuels to operate. Without a steady supply of gasoline and diesel, mobility would be severely affected, impacting logistics, commerce and people’s daily lives.        
+        </div>
+
+        <h4 class="subsection-title"> 
+            <span class="toggle-button" onclick="toggleDefinition(this)">&#8250;</span>
+            Overall
+        </h4>
+        <div class="paragraph"> 
+            the fact that fuel remains the foundation of our modern society demonstrates the great importance of fuel. From mobility and industry to power generation and critical infrastructure, this material is fundamental to the functioning of our daily lives.        
+        </div>   
+
+        <hr class="divider">
+
+        <h3 class="section-title">
+            Creators of Gasolines
+        </h3>
+
+        <div style="display: flex; align-items: center;">
+            <img src="Gasoline Website/Edwindrake.jpg" height="300" width="400" style="margin-right: 20px;">
+            <div>
+                <h3 class="subsection-title">Edwin Drake (1819-1880)</h3>
+                <p class="visibleparagraph">Edwin Dug the first crude oil well in Pennsylvania in 1859 and distilled the oil to produce kerosene for lighting. Although other petroleum products, including gasoline, were also produced in the distillation process, Drake had no use for the gasoline and other products, so he discarded them. It wasn't until 1892, with the invention of the automobile, that gasoline was recognized as a valuable fuel. By 1920, 9 million vehicles powered by gasoline were on the road, and service stations selling gasoline were opening around the country. Today, gasoline is the fuel for nearly all light-duty vehicles in the United States.</p>
+            </div>
+        </div>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <img src="Gasoline Website/DrVladimir.jpeg" height="300" width="400" style="margin-right: 20px;">
+            <div>
+                <h3 class="subsection-title">Vladimir Nikolayevich Ipatieff (1867-1952)</h3>
+                <p class="visibleparagraph">Vladimir Ipatieff was a notable Russian-American chemist recognized for his significant contributions to the field of petroleum refining. He is best known for developing the method of catalytic cracking, which transformed the production of gasoline and other fuels. This process allows heavier fractions of crude oil to be converted into lighter, more valuable products, including gasoline, making it more efficient to produce high-octane fuels necessary for the growing automotive industry​.</p>
+            </div>
+        </div>
+        <br>
+        <div style="display: flex; align-items: center;">
+            <img src="Gasoline Website/William_Merriam_Burton.jpg" height="250" width="235" style="margin-right: 20px;">
+            <div>
+                <h3 class="subsection-title">William Merriam Burton</h3>
+                <p class="visibleparagraph">Burton was an American chemist who developed a widely used thermal cracking process for crude oil. Burton was born in Cleveland, Ohio. In 1886, he received a Bachelor of Science degree at Western Reserve University. He earned a PhD at Johns Hopkins University in 1889.</p>
+            </div>
+        </div>
+        <br>
+        </div>
+           
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        function toggleDefinition(button) {
+            var paragraph = button.parentElement.nextElementSibling;
+            if (paragraph.style.maxHeight) {
+                paragraph.style.maxHeight = null; 
+                button.innerHTML = "&#8250;"; 
+            } else {
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px"
+                button.innerHTML = "<b>^</b>"; 
+            }
+        }
+    </script>
+</body>
+</html>
